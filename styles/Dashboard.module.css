@@ -68,6 +68,9 @@
     padding-left: 0;
     padding-top: 16px;
   }
+  .filterRoot {
+    width: calc(100vw - 64px);
+  }
 }
 
 @media (min-width: 640px) and (max-width: 930px) {

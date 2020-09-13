@@ -8,8 +8,12 @@ function MissionCard({data}) {
   useEffect(() => {
     if(data.rocket && data.rocket.first_stage && data.rocket.first_stage.cores && data.rocket.first_stage.cores.length > 0 ){
       data.rocket.first_stage.cores.forEach((core) => {
-        console.log("core", core)
-        typeof core.land_success === "boolean" && setLandSuccess(core.land_success.toString());
+        if(typeof core.land_success === "boolean") {
+          setLandSuccess(core.land_success.toString());
+          if(!core.land_success){
+            return;
+          }
+        }
       })
     }
   },[data]);
