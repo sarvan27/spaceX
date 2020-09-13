@@ -1,0 +1,93 @@
+.container {
+  padding: 0 16px 16px;
+}
+
+.filterButton {
+  padding: 8px 16px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 12px 18px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.missionCardRoot {
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  max-width: 150px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.missionCardImage {
+  height: 200px;
+  background-color: #E5E5E5;
+}
+
+@media (max-width: 640px){
+  .missionCardRoot {
+    max-width: 100%;
+  }
+  .missionCardImage {
+    height: 360px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 790px) {
+  .missionCardRoot {
+    max-width: 150px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 930px) {
+  .missionCardRoot {
+    max-width: 190px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 930px) and (max-width: 1060px) {
+  .missionCardRoot {
+    max-width: 110px;
+    font-size: 12px;
+    margin-right: 16px;
+  }
+  .missionCardImage {
+    height: 160px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1300px) {
+  .missionCardRoot {
+    max-width: 130px;
+    font-size: 12px;
+    margin-right: 16px;
+  }
+  .missionCardImage {
+    height: 160px;
+  }
+}
+
+@media (min-width: 1300px){
+  .missionCardRoot {
+    max-width: 190px;
+    margin-right: 16px;
+  }
+  .missionCardImage {
+    height: 200px;
+  }
+}
+
+/* @media (min-width: 1200px){
+  .missionCardRoot {
+    max-width: 190px;
+    margin-right: 16px;
+  }
+  .missionCardImage {
+    height: 200px;
+  }
+} */

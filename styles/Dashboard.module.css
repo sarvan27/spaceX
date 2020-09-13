@@ -1,0 +1,86 @@
+.dashboardRoot {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* Filter */
+.filterRoot {
+  padding: 16px;
+  background-color: white;
+  border-radius: 5px;
+  min-width: 260px;
+  max-width: 700px;
+}
+
+.filterHeader {
+  margin-block-start: 0;
+  margin-block-end: 12px;
+}
+
+/* LaunchYearFilter */
+.launchYearRoot {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.launchYearTitle {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+#hr1 {
+  margin-block-end: 0;
+}
+
+.filterButtonFlex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* MissionViewer */
+.missionDetailsRoot {
+  padding-left: 16px;
+}
+
+.missionDetailsFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.developedBY {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .filterRoot {
+    max-width: 300px;
+  }
+  .dashboardRoot {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 640px) {
+  .missionDetailsRoot {
+    padding-left: 0;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 930px) {
+  .filterRoot {
+    min-width: 220px;
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 930px) and (max-width: 1114px) {
+  .filterRoot {
+    min-width: 220px;
+    max-width: 220px;
+  }
+}
+
